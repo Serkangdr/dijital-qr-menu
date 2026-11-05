@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f9f3e5" />
+    <title>Waffle & Co. | Menü</title>
+    <meta name="description" content="Waffle & Co. — Menü ve Fiyat Listesi" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23E67E22'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='50' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=DM+Sans:opsz,wght@9..40,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/projeler/dijital-qr-menu.css" />
+
+    <script src="assets/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/projeler/dijital-qr-menu.js" defer></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div>
+        <div class="brand">Waffle & Co.</div>
+        <div class="sub-brand">Menü ve Fiyat Listesi</div>
+      </div>
+    </header>
+
+    <nav class="category-nav-wrapper" aria-label="Kategoriler">
+      <div class="category-scroll" data-pills>
+        <span class="cat-ind" aria-hidden="true"></span>
+        <button type="button" class="cat-pill active" data-category="popular" aria-pressed="true">
+          Popüler
+        </button>
+        <button type="button" class="cat-pill" data-category="waffles" aria-pressed="false">
+          Waffle'lar
+        </button>
+        <button type="button" class="cat-pill" data-category="drinks" aria-pressed="false">
+          İçecekler
+        </button>
+        <button type="button" class="cat-pill" data-category="fruits" aria-pressed="false">
+          Meyveler
+        </button>
+        <button type="button" class="cat-pill" data-category="toppings" aria-pressed="false">
+          Süslemeler
+        </button>
+        <button type="button" class="cat-pill" data-category="chocolates" aria-pressed="false">
+          Çikolatalar
+        </button>
+      </div>
+    </nav>
+
+    <main class="menu-container">
+      <div class="menu-head">
+        <h2 id="categoryTitle" class="current-category-title" aria-live="polite">
+          Popüler Lezzetler
+        </h2>
+      </div>
+      <div id="menuGrid" class="menu-grid"></div>
+
+      <div class="footer-info">
+        Tüm fiyatlara KDV dahildir.<br />
+        Alerjen uyarısı için garsona danışınız.
+      </div>
+    </main>
+  </body>
+</html>
